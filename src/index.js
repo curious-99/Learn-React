@@ -133,31 +133,35 @@ import ReactDOM from 'react-dom';
 // )
 
 
-// Lecture -18 Creating Simple Greeting Website using React JS 
-import "./index.css";
-let currDate = new Date(2023, 14, 4, 15);
-currDate = currDate.getHours();
-let greeting = "";
-const cssStyle = {};
+// // Lecture -18 Creating Simple Greeting Website using React JS 
+// import "./index.css";
+// let currDate = new Date(2023, 14, 4, 15);
+// currDate = currDate.getHours();
+// let greeting = "";
+// const cssStyle = {};
 
-if (currDate >= 1 && currDate < 12) {
-    greeting = "Good Morning";
-    cssStyle.color = "green";
-} else if (currDate >= 12 && currDate < 20) {
-    greeting = "Good Afternoon";
-    cssStyle.color = "orange";
-} else {
-    greeting = "Good Night";
-    cssStyle.color = "black";
-}
+// if (currDate >= 1 && currDate < 12) {
+//     greeting = "Good Morning";
+//     cssStyle.color = "green";
+// } else if (currDate >= 12 && currDate < 20) {
+//     greeting = "Good Afternoon";
+//     cssStyle.color = "orange";
+// } else {
+//     greeting = "Good Night";
+//     cssStyle.color = "black";
+// }
 
-ReactDOM.render(
-    <>
-        <div>
-            <h1>
-                hello sir <span style={cssStyle}>{greeting}</span>
-            </h1>
-        </div>
-    </>,
-    document.getElementById('root')
-);
+// ReactDOM.render(
+//     <>
+//         <div>
+//             <h1>
+//                 hello sir <span style={cssStyle}>{greeting}</span>
+//             </h1>
+//         </div>
+//     </>,
+//     document.getElementById('root')
+// );
+
+//Lecture - 19 React Components 
+import App from './App';
+ReactDOM.render(<App/>,document.getElementById('root'));
