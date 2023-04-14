@@ -162,6 +162,11 @@ import ReactDOM from 'react-dom';
 //     document.getElementById('root')
 // );
 
-//Lecture - 19 React Components 
+// //Lecture - 19 React Components 
+// import App from './App';
+// ReactDOM.render(<App/>,document.getElementById('root'));
+
+
+// Lecture -20  Creating Simple Greeting Website using React JS 
 import App from './App';
 ReactDOM.render(<App/>,document.getElementById('root'));
