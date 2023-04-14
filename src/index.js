@@ -173,15 +173,15 @@ import ReactDOM from 'react-dom';
 
 
 // Lecture -21 ES6 Modules Import Export in React JS
-import myfav, { favprog,myName,myNames } from './App';
+import * as ques from './App';
 ReactDOM.render(
     <>
         <ol>
             <li>Mohit</li>
-            <li>{myfav}</li>
-            <li> {favprog}</li>
-            <li> {myName()}</li>
-            <li> {myNames()}</li>
+            <li> {ques.default}</li>
+            <li> {ques.favprog}</li>
+            <li> {ques.myName()}</li>
+            <li> {ques.myNames()}</li>
         </ol>
     </>, document.getElementById('root')
 );
