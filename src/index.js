@@ -167,6 +167,21 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<App/>,document.getElementById('root'));
 
 
-// Lecture -20  Creating Simple Greeting Website using React JS 
-import App from './App';
-ReactDOM.render(<App/>,document.getElementById('root'));
+// // Lecture -20  Creating Simple Greeting Website using React JS 
+// import App from './App';
+// ReactDOM.render(<App/>,document.getElementById('root'));
+
+
+// Lecture -21 ES6 Modules Import Export in React JS
+import myfav, { favprog,myName,myNames } from './App';
+ReactDOM.render(
+    <>
+        <ol>
+            <li>Mohit</li>
+            <li>{myfav}</li>
+            <li> {favprog}</li>
+            <li> {myName()}</li>
+            <li> {myNames()}</li>
+        </ol>
+    </>, document.getElementById('root')
+);
