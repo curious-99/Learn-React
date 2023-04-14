@@ -99,35 +99,65 @@ import ReactDOM from 'react-dom';
 // )
 
 
-//Lecture 15 - CSS Styling & Importing CSS Files in React JS
-import './index.css'
+// //Lecture 15 - CSS Styling & Importing CSS Files in React JS
+// import './index.css'
 
-const name = "Mohit";
-const img1 = "https://picsum.photos/200/300";
-const img2 = "https://picsum.photos/250/300";
-const img3 = "https://picsum.photos/300/300";
-const img4 = "https://picsum.photos/350/300";
-const link = "http://youtube.com";
+// const name = "Mohit";
+// const img1 = "https://picsum.photos/200/300";
+// const img2 = "https://picsum.photos/250/300";
+// const img3 = "https://picsum.photos/300/300";
+// const img4 = "https://picsum.photos/350/300";
+// const link = "http://youtube.com";
 
-const heading = {
-    color:"#fa9191",
-    textAlign:"center",
-    textTransform:'capitalize',
-    fontWeight:'bold',
-    textShadow:'0px 2px 8px #aba696',
-    margin:'50px 0px',
-    fontFamily:'"Varela Round", sans - serif',
-};
+// const heading = {
+//     color:"#fa9191",
+//     textAlign:"center",
+//     textTransform:'capitalize',
+//     fontWeight:'bold',
+//     textShadow:'0px 2px 8px #aba696',
+//     margin:'50px 0px',
+//     fontFamily:'"Varela Round", sans - serif',
+// };
+
+// ReactDOM.render(
+//     <>
+//         <h1 style={heading}>{`My name is ${name}`}</h1>
+//         <div className='img_div'>
+//             <img src={img1} alt="randomImages" />
+//             <img src={img2} alt="randomImages" />
+//             <img src={img3} alt="randomImages" />
+//             <a href={link} target="_blank"> <img src={img4} alt="randomImages" /> </a>
+//         </div>
+//     </>,
+//     document.getElementById('root')
+// )
+
+
+// Lecture -18 Creating Simple Greeting Website using React JS 
+import "./index.css";
+let currDate = new Date(2023, 14, 4, 15);
+currDate = currDate.getHours();
+let greeting = "";
+const cssStyle = {};
+
+if (currDate >= 1 && currDate < 12) {
+    greeting = "Good Morning";
+    cssStyle.color = "green";
+} else if (currDate >= 12 && currDate < 20) {
+    greeting = "Good Afternoon";
+    cssStyle.color = "orange";
+} else {
+    greeting = "Good Night";
+    cssStyle.color = "black";
+}
 
 ReactDOM.render(
     <>
-        <h1 style={heading}>{`My name is ${name}`}</h1>
-        <div className='img_div'>
-            <img src={img1} alt="randomImages" />
-            <img src={img2} alt="randomImages" />
-            <img src={img3} alt="randomImages" />
-            <a href={link} target="_blank"> <img src={img4} alt="randomImages" /> </a>
+        <div>
+            <h1>
+                hello sir <span style={cssStyle}>{greeting}</span>
+            </h1>
         </div>
     </>,
     document.getElementById('root')
-)
+);
