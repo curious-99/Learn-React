@@ -193,25 +193,40 @@ import ReactDOM from 'react-dom';
 
 //lecture - 23 Props in react JS
 import Card from './Cards';
+import "./index.css";
+import SData from "./SData";
 ReactDOM.render(
     <>
+        <h1 className='heading_style'>List of top 5 Netlix Series in 2020</h1>
         <Card 
-            imgsrc='https://wallpapercave.com/dwp2x/wp4056398.png' 
-            title='A Netflix Originals' 
-            sname='DARK' 
-            link ='https://www.netflix.com/in/title/80100172'
+            imgsrc={SData[0].imgsrc}
+            title={SData[0].title}
+            sname={SData[0].sname}
+            link ={SData[0].link}
         />
         <Card 
-            imgsrc='https://e1.pxfuel.com/desktop-wallpaper/720/665/desktop-wallpaper-extracurricular-web-series-extracurricular.jpg' 
-            title='A Netflix Originals' 
-            sname='Extra Curricular' 
-            link ='https://www.netflix.com/in/title/80990668#:~:text=Watch%20Extracurricular%20%7C%20Netflix%20Official%20Site'
+            imgsrc={SData[1].imgsrc}
+            title={SData[1].title}
+            sname={SData[1].sname}
+            link ={SData[1].link}
         />
         <Card 
-            imgsrc='https://c4.wallpaperflare.com/wallpaper/913/33/212/billelis-stranger-things-artwork-digital-tv-hd-wallpaper-preview.jpg' 
-            title='A Netflix Originals' 
-            sname='Stranger Things' 
-            link ='https://www.netflix.com/in/title/80057281?source=35'
+            imgsrc={SData[2].imgsrc}
+            title={SData[2].title}
+            sname={SData[2].sname}
+            link ={SData[2].link}
+        />
+        <Card 
+            imgsrc={SData[3].imgsrc}
+            title={SData[3].title}
+            sname={SData[3].sname}
+            link ={SData[3].link}
+        />
+        <Card 
+            imgsrc={SData[4].imgsrc}
+            title={SData[4].title}
+            sname={SData[4].sname}
+            link ={SData[4].link}
         />
     </>,
     document.getElementById('root')
