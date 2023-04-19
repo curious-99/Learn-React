@@ -195,10 +195,22 @@ import ReactDOM from 'react-dom';
 import Card from './Cards';
 import "./index.css";
 import SData from "./SData";
+
+// function ncard(val){
+//     console.log(val);
+//     return(
+//         <Card 
+//             imgsrc={val.imgsrc}
+//             title={val.title}
+//             sname={val.sname}
+//             link ={val.link}
+//         />
+//     );
+// }
 ReactDOM.render(
     <>
         <h1 className='heading_style'>List of top 5 Netlix Series in 2020</h1>
-        <Card 
+        {/* <Card 
             imgsrc={SData[0].imgsrc}
             title={SData[0].title}
             sname={SData[0].sname}
@@ -227,7 +239,18 @@ ReactDOM.render(
             title={SData[4].title}
             sname={SData[4].sname}
             link ={SData[4].link}
-        />
+        /> */}
+        {/* Lecture 26  */}
+        {SData.map((val)=>{
+            return(
+                <Card 
+                    imgsrc={val.imgsrc}
+                    title={val.title}
+                    sname={val.sname}
+                    link ={val.link}
+                />
+            );
+        })}
     </>,
     document.getElementById('root')
 );

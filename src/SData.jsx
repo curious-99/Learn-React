@@ -19,16 +19,22 @@ const SData =[
         link :'https://www.netflix.com/in/title/80057281?source=35'
     },
     {
-        sname:'DARK', 
-        imgsrc:'https://wallpapercave.com/dwp2x/wp4056398.png' ,
+        sname:'Peaky Blinders', 
+        imgsrc:'https://c4.wallpaperflare.com/wallpaper/261/478/534/tv-series-4k-peaky-blinders-wallpaper-preview.jpg' ,
         title:'A Netflix Originals',
-        link :'https://www.netflix.com/in/title/80100172'
+        link :'https://www.netflix.com/in/title/80002479?source=35'
     },
     {
-        sname:'DARK', 
-        imgsrc:'https://wallpapercave.com/dwp2x/wp4056398.png' ,
+        sname:'Money Heist', 
+        imgsrc:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYg13_A2E1tdqwAXSL_b_4zUj0EYdX72LwAQ&usqp=CAU' ,
         title:'A Netflix Originals',
-        link :'https://www.netflix.com/in/title/80100172'
+        link :'https://www.netflix.com/in/title/80192098'
+    },
+    {
+        sname:'All of Us Are Dead', 
+        imgsrc:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcAvJEZoh74W04zSCQz3MD44FQXSlWeTt3zw&usqp=CAU' ,
+        title:'A Netflix Originals',
+        link :'https://www.netflix.com/in/title/81237994?source=35'
     },
 ];
 export default SData;
